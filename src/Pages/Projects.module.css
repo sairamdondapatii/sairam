@@ -1,0 +1,66 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .projectLink {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+  }
+  
+  .projectTitle {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .card:hover .projectTitle {
+    color: #0056b3;
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .projectImage {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive tweak for smaller screens */
+  @media (max-width: 480px) {
+    .projectTitle {
+      font-size: 1.1rem;
+    }
+  
+    .projectImage {
+      width: 100%;
+      height: 160px;
+    }
+  }
+  

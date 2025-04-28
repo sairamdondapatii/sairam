@@ -1,0 +1,7 @@
+export {default as HomeLayout} from "./Pages/HomeLayout"
+export {default as Home} from "./Pages/Home"
+export {default as About} from "./Pages/About"
+export {default as Projects} from "./Pages/Projects"
+export {default as Contacts} from "./Pages/Contact"
+export {default as SingleProject} from "./Pages/Singleproject"
+export {default as ThankYou} from "./Pages/Thankyou"
