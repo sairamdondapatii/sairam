@@ -17,7 +17,7 @@ const Contact =  () => {
       message: formData.get("message"),
     };
     try {
-      const response = await fetch(" http://localhost:8090/submitform",{
+      const response = await fetch("https://send-mail-ggid.onrender.com/submitform",{
         method:'POST',
         headers:{
           'Content-Type':'application/json',
